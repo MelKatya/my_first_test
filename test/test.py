@@ -47,8 +47,8 @@ def fill(row, col):
 
 
 row = int(input('Введите количество строк: '))
-col = int(input('Введите количество столбцов: '))
-matrix = fill(row, col)
+coll = int(input('Введите количество столбцов: '))
+matrix = fill(row, coll)
 for i in matrix:
     for j in i:
         print(j, end=' ')
@@ -57,9 +57,7 @@ for i in matrix:
 max_num = max_number(matrix)
 print('Наибольшее число:', max_num[0])
 print('Координаты:', max_num[1])
-print()
 min_num = min_number(matrix)
 print('Наименьшее число:', min_num[0])
 print('Координаты:', min_num[1])
-print()
 print('Среднее арифметическое:', round(middle_num(matrix), 3))
